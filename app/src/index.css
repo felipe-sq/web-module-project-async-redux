@@ -12,6 +12,13 @@ code {
     monospace;
 }
 
+.joke-btn {
+  padding: 1% 6.5% 1% 6.5%;
+  background-color:#57f848;
+  border-color: white;
+  border-radius: 10px;
+}
+
 .App {
   text-align: center;
 }

@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { connect } from "react-redux";
 import { fetchJoke } from "../actions/jokeActions";
+import { Container, Card, Button, Badge } from 'react-bootstrap';
 
 const Joke = (props) => {
   useEffect(() => { props.fetchJoke(); }, []);
@@ -8,10 +9,12 @@ const Joke = (props) => {
     return <><h2>Loading joke... </h2></>
   }
   return (
-    <>
-      <h2> {props.joke} </h2>
-      <button onClick={props.fetchJoke}>Get new Joke!</button>
-    </>
+    <Container>
+      <Card>
+        <Card.Title> {props.joke} </Card.Title><br/>
+        <button className="joke-btn" onClick={props.fetchJoke}>Get new Joke!</button>
+      </Card>
+    </Container>
   )
 }
 
