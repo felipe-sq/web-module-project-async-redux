@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: linear-gradient(60deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+
 }
 
 code {
@@ -12,11 +14,22 @@ code {
     monospace;
 }
 
+h1 {
+  font-family: 'Dela Gothic One', cursive;
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+}
+
 .joke-btn {
   padding: 1% 6.5% 1% 6.5%;
-  background-color:#57f848;
+  background-color:tomato;
   border-color: white;
   border-radius: 10px;
+  font-size: large;
+  font-weight: bold;
+  color: white;
 }
 
 .App {
