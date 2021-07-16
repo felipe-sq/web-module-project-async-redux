@@ -12,7 +12,7 @@ import styled from 'styled-components';
 import thunk from 'redux-thunk';
 import { Container, Card, Col, Image, Badge } from 'react-bootstrap';
 
- 
+  
 const store = createStore(jokeReducer, applyMiddleware(logger, thunk));
 const MainDiv = styled.div`
   display: flex;
