@@ -6,7 +6,7 @@ export const FETCH_JOKE_ERROR = "FETCH_JOKE_ERROR";
 export const fetchJoke = () => (dispatch) => {
     
   dispatch({ type: FETCH_JOKE_DATA });
-  axios.get("http://api.icndb.com/jokes/random")
+  axios.get("https://api.icndb.com/jokes/random")
     .then(res => {
       console.log(res.data.value);
       dispatch({ type: FETCH_JOKE_OK, payload: res.data.value.joke});
