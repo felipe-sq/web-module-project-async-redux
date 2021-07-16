@@ -16,7 +16,7 @@ const Joke = (props) => {
           <h2>{props.joke}</h2><br/>
           <button className="joke-btn" onClick={props.fetchJoke}>Get new Joke!</button>
         </Card>
-      </Container>
+      </Container> 
     </MainDiv>
   )
 }
